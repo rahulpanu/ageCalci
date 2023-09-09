@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calci</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Please Enter your Date of Birth</h2>
+    </div>
+    <div class="age_cal hide">
+        <h2>Your Age according to your Date of Birth</h2>
+        <div class="age">
+            <h2>
+                <div class="year">0</div>
+                Years
+            </h2>
+            <h2>
+                <div class="month">0</div>
+                Months
+            </h2>
+            <h2>
+                <div class="day">0</div>
+                Days
+            </h2>
+            <h2>
+                <div class="hour">0</div>
+                Hours
+            </h2>
+            <h2>
+                <div class="min">0</div>
+                Mins
+            </h2>
+            <h2>
+                <div class="sec">0</div>
+                Secs
+            </h2>
+        </div>
+    </div>
+    <div class="set_date">
+        <i class="fa-solid fa-gear" onclick="toggle()" class="open_icon"></i>
+        <div class="set_content hide">
+            <input type="date">
+            <button onclick="setDate()">Set Date</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
